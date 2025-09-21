@@ -287,7 +287,7 @@ a {
 }
 
 .formats-item {
-	flex-basis: calc(100% - 40px / 3);
+	flex-basis: calc((100% - 40px) / 3);
 }
 
 .format-card {
@@ -476,6 +476,9 @@ a {
 	max-width: 880px;
 	height: 100%;
 	max-height: 880px;
+	padding: 128px;
+	overflow: auto;
+	text-align: center;
 	background-color: var(--color-primary-light);
 	border-radius: 32px;
 }
@@ -490,4 +493,20 @@ a {
 	position: absolute;
 	right: 40px;
 	top: 40px;
+}
+/*Form*/
+.form-field {
+	margin-bottom: 32px;
+}
+
+.input {
+	padding: 16px 42px;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid #a18268;
+	background-color: transparent;
+}
+
+.input:focus {
+	border-color: var(--color-brand);
 }
