@@ -497,9 +497,23 @@ a {
 /*Form*/
 .form-field {
 	margin-bottom: 32px;
+	position: relative;
 }
 
-.input {
+.form-label {
+	position: absolute;
+	top: 16px;
+	left: 42px;
+	font-size: 16px;
+	line-height: 1.17;
+	transition: transform 0.3s;
+}
+
+.form-input:focus + .form-label {
+	transform: translate(-36px, -40px);
+}
+
+.form-input {
 	padding: 16px 42px;
 	width: 100%;
 	border-radius: 8px;
@@ -507,6 +521,7 @@ a {
 	background-color: transparent;
 }
 
-.input:focus {
+.form-input:focus {
 	border-color: var(--color-brand);
+	outline: none; /* для того щоб зміни коліру в бордер показувались*/
 }
