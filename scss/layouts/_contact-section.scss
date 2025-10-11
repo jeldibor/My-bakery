@@ -1,0 +1,49 @@
+.contact-section {
+	padding: 96px;
+}
+
+.contact-title {
+	margin-bottom: 16px;
+}
+
+.contact-container {
+	display: flex;
+	gap: 32px;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.contact-p {
+	margin-bottom: 42px;
+}
+
+.contact-bottom {
+	display: block;
+	margin: 0 auto;
+}
+.p {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contact-form {
+	flex: 50%;
+	height: auto;
+	max-height: none;
+}
+
+.contact-map-wrap {
+	flex: 50%;
+	min-width: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact-map {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border: none;
+	border-radius: 16px;
+}
